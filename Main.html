@@ -1,0 +1,1451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- boxicons -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!-- app css -->
+    <link rel="stylesheet" href="./Main1.css">
+    <link rel="stylesheet" href="./Main2.css">
+    <link rel="stylesheet" href="main22.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="jquery-ui-1.9.0.custom.min.js"></script>
+</head>
+
+<script>
+    $(document).ready(function(){
+        $("#searchoption").on("keyup",function(){
+         var value = $(this).val().toLowerCase();
+         $("#card-n").filter(function(){
+             $(this).toggle($(this.text().toLowerCase().indexOf(value) > -1 ));
+         });
+        });
+        });
+</script>
+
+<body>
+<!-- header -->
+<header>
+    <!-- mobile menu -->
+    <div class="mobile-menu bg-second">
+        <a href="#" class="mb-logo">Home</a>
+        <span class="mb-menu-toggle" id="mb-menu-toggle">
+                <i class='bx bx-menu'></i>
+            </span>
+    </div>
+    <!-- end mobile menu -->
+    <!-- main header -->
+    <div class="header-wrapper" id="header-wrapper">
+            <span class="mb-menu-toggle mb-menu-close" id="mb-menu-close">
+                <i class='bx bx-x'></i>
+            </span>
+        <!-- top header -->
+        <div class="bg-second">
+            <div class="top-header container">
+                <ul class="devided">
+                    <li>
+                        <a href="#">+94 714872517</a>
+                    </li>
+                    <li>
+                        <a href="#">kaveen.20200895@iit.ac.lk</a>
+                    </li>
+                </ul>
+                <ul class="devided">
+                    <li class="dropdown">
+                        <a href="">USD</a>
+                        <i class='bx bxs-chevron-down'></i>
+                        <ul class="dropdown-content">
+                            <li><a href="#">LKR</a></li>
+                            <li><a href="#">AUD</a></li>
+                            <li><a href="#">EUR</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="">ENGLISH</a>
+                        <i class='bx bxs-chevron-down'></i>
+                        <ul class="dropdown-content">
+                            <li><a href="#">SINHALA</a></li>
+                            <li><a href="#">FRENCH</a></li>
+                            <li><a href="#">SPANISH</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">ORDER TRACKING</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- end top header -->
+        <!-- mid header -->
+        <div class="bg-main">
+            <div class="mid-header container">
+                <a href="#" class="logo">Kavin SK Stores</a>
+                <div class="search">
+                    <input type="text" id="searchoption" placeholder="Search">
+                    <i class='bx bx-search-alt'></i>
+                </div>
+                <ul class="user-menu">
+                    <li><a href="#"><i class='bx bx-bell'></i></a></li>
+                    <li><a href="#"><i class='bx bx-user-circle'></i></a></li>
+                    <li><a href="#"><i class='bx bx-cart'></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- end mid header -->
+        <!-- bottom header -->
+        <div class="bg-second">
+            <div class="bottom-header container">
+                <ul class="main-menu">
+                    <li><a href="Main.html">home</a></li>
+                    <!-- mega menu -->
+                    <li class="mega-dropdown">
+                        <a href="./products.html">Shop<i class='bx bxs-chevron-down'></i></a>
+                        <div class="mega-content">
+                            <div class="row">
+                                <div class="col-3 col-md-12">
+                                    <div class="box">
+                                        <h3>Brand</h3>
+                                        <ul>
+                                            <li><a href="#nike1sH">Nike</a></li>
+                                            <li><a href="#">Adidas</a></li>
+                                            <li><a href="#">New Balance</a></li>
+                                            <li><a href="#fila1Sh">Fila</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-3 col-md-12">
+                                    <div class="box">
+                                        <h3>Size</h3>
+                                        <ul>
+                                            <li><a href="#">US 10 / ASIAN 45</a></li>
+                                            <li><a href="#">US 11 / ASIAN 46</a></li>
+                                            <li><a href="#">US 12 / ASIAN 47</a></li>
+                                            <li><a href="#">US 13 / ASIAN 48</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-3 col-md-12">
+                                    <div class="box">
+                                        <h3>Colour</h3>
+                                        <ul>
+                                            <li><a href="#nike1sH">Red</a></li>
+                                            <li><a href="#">Blue</a></li>
+                                            <li><a href="#">Black</a></li>
+                                            <li><a href="#">White</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-3 col-md-12">
+                                    <div class="box">
+                                        <h3>Category</h3>
+                                        <ul>
+                                            <li><a href="#">Casual</a></li>
+                                            <li><a href="#">Official</a></li>
+                                            <li><a href="#">Sports</a></li>
+                                            <li><a href="#">Espadrilles</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row img-row">
+                                <div class="col-3">
+                                    <div class="box">
+                                        <img src="./nike6.jpeg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="box">
+                                        <img src="./adidas1.jpeg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="box">
+                                        <img src="./NB3.jpeg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="box">
+                                        <a href="ProductDetails.html"><img src="./Nike1.jpeg" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- end mega menu -->
+                    <li><a href="FilterPage.html">Filter Products</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- end bottom header -->
+    </div>
+    <!-- end main header -->
+</header>
+<!-- end header -->
+<!-- hero section -->
+<div class="hero">
+    <div class="slider">
+        <div class="container">
+            <!-- slide item -->
+            <div class="slide active">
+                <div class="info">
+                    <div class="info-content">
+                        <h3 class="top-down">
+                            Lugz Men's Convoy Fashion Boot
+                        </h3>
+                        <h2 class="top-down trans-delay-0-2">
+                            Long Term Usable
+                        </h2>
+                        <p class="top-down trans-delay-0-4">
+                            Make a statement about who you are and where you’re going with the men’s Convoy boot. Durable and secure with a padded collar and tongue for added comfort, look great and feel even better with these classic 6 inch boots. No matter what comes your way in this boot - you’ll be ready.
+                        </p>
+                        <div class="top-down trans-delay-0-6">
+                            <button class="btn-flat btn-hover">
+                                <span>shop now</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="img top-down">
+                    <img src="./img1.png" alt="">
+                </div>
+            </div>
+            <!-- end slide item -->
+            <!-- slide item -->
+            <div class="slide">
+                <div class="info">
+                    <div class="info-content">
+                        <h3 class="top-down">
+                            Lightweight Athletic Shoes
+                        </h3>
+                        <h2 class="top-down trans-delay-0-2">
+                            Feel The Comfort
+                        </h2>
+                        <p class="top-down trans-delay-0-4">
+                            Mens Running Shoes Walking Athletic for Men Casual Slip Fashion Sports Outdoor Shoes
+
+                            Rubber material of sole possesses high durability for prolonging the wearing time of our shoes.The elastic soles have high flexibility which allows the shoes to bend strongly while doing sports.
+                        </p>
+                        <div class="top-down trans-delay-0-6">
+                            <button class="btn-flat btn-hover">
+                                <span>shop now</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="img right-left">
+                    <img src="./img03.jpeg" alt="">
+                </div>
+            </div>
+            <!-- end slide item -->
+            <!-- slide item -->
+            <div class="slide">
+                <div class="info">
+                    <div class="info-content">
+                        <h3 class="top-down">
+                            Genuine Leather Loafer Shoes
+                        </h3>
+                        <h2 class="top-down trans-delay-0-2">
+                            Genuine Plus
+                        </h2>
+                        <p class="top-down trans-delay-0-4">
+                            Men's driving loafers, the combination of leather upper and rubber bottom, breathable and soft, provides your feet a lightweight and comfortable experience.Made of breathable and supple leather, soft and friendly to your skin, giving your feet long lasting comfort.
+                        </p>
+                        <div class="top-down trans-delay-0-6">
+                            <button class="btn-flat btn-hover">
+                                <span>shop now</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="img left-right">
+                    <img src="./img04.jpeg" alt="">
+                </div>
+            </div>
+            <!-- end slide item -->
+        </div>
+        <!-- slider controller -->
+        <button class="slide-controll slide-next">
+            <i class='bx bxs-chevron-right'></i>
+        </button>
+        <button class="slide-controll slide-prev">
+            <i class='bx bxs-chevron-left'></i>
+        </button>
+        <!-- end slider controller -->
+    </div>
+</div>
+<!-- end hero section -->
+
+<!-- promotion section -->
+<div class="promotion">
+    <div class="row">
+        <div class="col-4 col-md-12 col-sm-12">
+            <div class="promotion-box">
+                <div class="text">
+                    <h3>Men Shoes & All Slippers</h3>
+                    <a href="#menSh"> <button class="btn-flat btn-hover"><span>shop collection</span></button></a>
+                </div>
+                <img src="./img06menS.png" alt="">
+            </div>
+        </div>
+        <div class="col-4 col-md-12 col-sm-12">
+            <div class="promotion-box">
+                <div class="text">
+                    <h3>Women Shoes & All Slippers</h3>
+                    <a href="#womenSh"><button class="btn-flat btn-hover"><span>shop collection</span></button></a>
+                </div>
+                <img src="./img07womenS.png" alt="">
+            </div>
+        </div>
+        <div class="col-4 col-md-12 col-sm-12">
+            <div class="promotion-box">
+                <div class="text">
+                    <h3>Kids Shoes & All Slippers</h3>
+                    <a href="#kidSh"><button class="btn-flat btn-hover"><span>shop collection</span></button></a>
+                </div>
+                <img src="./img05.jpeg" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+
+<br>
+<!-- end promotion section -->
+<div class="container12">
+
+    <section id="header" style="margin-bottom: 50px;"><a href="http://www.webresourcesdepot.com/drag-n-drop-shopping-cart-with-jquery-ui-tutorial/"></a></section>
+
+    <section id="product">
+        <ul class="clear">
+            <li data-id="1">
+                <a href="#">
+                    <h3>Nike Spy</h3>
+                    <p>199.99$ (Male)</p>
+                    <p>Add To Favorites</p>
+                </a>
+            </li>
+            <li data-id="2">
+                <a href="#">
+                    <h3>New BL Air</h3>
+                    <p>199.99$ (Male)</p>
+                    <p>Add To Favorites</p>
+                </a>
+            </li>
+            <li data-id="3">
+                <a href="#">
+                    <h3>Fila 1911</h3>
+                    <p>99.99$ (Male)</p>
+                    <p>Add To Favorites</p>
+                </a>
+            </li>
+            <li data-id="4">
+                <a href="#">
+                    <h3>Adidas G 3.0</h3>
+                    <p>99.99$ (Male)</p>
+                    <p>Add To Favorites</p>
+                </a>
+            </li>
+            <li data-id="5">
+                <a href="#">
+                    <h3>Kalvin Clein</h3>
+                    <p>59.99$ (Female)</p>
+                    <p>Add To Favorites</p>
+                </a>
+            </li>
+            <li data-id="6">
+                <a href="#">
+                    <h3>Jimmy Chooz</h3>
+                    <p>59.99$ (Female)</p>
+                    <p>Add To Favorites</p>
+                </a>
+            </li>
+            <li data-id="7">
+                <a href="#">
+                    <h3>Nine West</h3>
+                    <p>64.99$ (Female)</p>
+                    <p>Add To Favorites</p>
+                </a>
+            </li>
+            <li data-id="8">
+                <a href="#">
+                    <h3>Bubble Crooz</h3>
+                    <p>79.99$ (Female)</p>
+                    <p>Add To Favorites</p>
+                </a>
+            </li>
+
+            <li data-id="9">
+                <a href="#">
+                    <h3>Tory Burch</h3>
+                    <p>39.99$ (Kids)</p>
+                    <p>Add To Favorites</p>
+                </a>
+            </li>
+            <li data-id="10">
+                <a href="#">
+                    <h3>Manolo BL</h3>
+                    <p>29.99$ (Kids)</p>
+                    <p>Add To Favorites</p>
+                </a>
+            </li>
+            <li data-id="11">
+                <a href="#">
+                    <h3>Adidas Kids</h3>
+                    <p>49.99$ (Kids)</p>
+                    <p>Add To Favorites</p>
+                </a>
+            </li>
+            <li data-id="12">
+                <a href="#">
+                    <h3>Nike S Kids</h3>
+                    <p>79.99$ (Kids)</p>
+                    <p>Add To Favorites</p>
+                </a>
+            </li>
+        </ul>
+    </section>
+
+
+    <aside id="sidebar">
+        <div class="basket">
+            <div class="basket_list">
+                <div class="head">
+                    <span class="name">❤️Favorites❤️</span>
+                </div>
+                <ul>
+                    <!--li>
+                        <span class="name">Samsung S3 asd asdasdaf dfsdghgfg dgfg</span>
+                        <input class="count" value="1" type="text">
+                        <button class="delete">&#10005;</button>
+                    </li-->
+                </ul>
+            </div>
+        </div>
+
+        <div id="sponsor" style="margin-top: 20px;">
+            <a href="http://www.sslmatic.com/"></a>
+        </div>
+    </aside>
+</div>
+<!--The following code is placed at the end of the body. because the document has
+to be loaded before the draggable and droppable codes get executed
+-->
+<script>
+    $(function () {
+
+        // jQuery UI Draggable
+        $("#product li").draggable({
+
+            // brings the item back to its place when dragging is over
+            revert:true,
+
+            // once the dragging starts, we decrease the opactiy of other items
+            // Appending a class as we do that with CSS
+            drag:function () {
+                $(this).addClass("active");
+                $(this).closest("#product").addClass("active");
+            },
+
+            // removing the CSS classes once dragging is over.
+            stop:function () {
+                $(this).removeClass("active").closest("#product").removeClass("active");
+            }
+        });
+
+        // jQuery Ui Droppable
+        $(".basket").droppable({
+
+            // The class that will be appended to the to-be-dropped-element (basket)
+            activeClass:"active",
+
+            // The class that will be appended once we are hovering the to-be-dropped-element (basket)
+            hoverClass:"hover",
+
+            // The acceptance of the item once it touches the to-be-dropped-element basket
+            // For different values http://api.jqueryui.com/droppable/#option-tolerance
+            tolerance:"touch",
+            drop:function (event, ui) {
+
+                var basket = $(this),
+                    move = ui.draggable,
+                    itemId = basket.find("ul li[data-id='" + move.attr("data-id") + "']");
+
+                // To increase the value by +1 if the same item is already in the basket
+                if (itemId.html() != null) {
+                    itemId.find("input").val(parseInt(itemId.find("input").val()) + 1);
+                }
+                else {
+                    // Add the dragged item to the basket
+                    addBasket(basket, move);
+
+                    // Updating the quantity by +1" rather than adding it to the basket
+
+                }
+            }
+        });
+
+        // This function runs onc ean item is added to the basket
+        function addBasket(basket, move) {
+            basket.find("ul").append('<li data-id="' + move.attr("data-id") + '">'
+                + '<span class="name">' + move.find("h3").html() + '</span>'
+                + '<input class="count" value="1" type="text">'
+                + '<button class="delete">&#10005;</button>');
+        }
+
+
+        // The function that is triggered once delete button is pressed
+        $(".basket ul li button.delete").live("click", function () {
+            $(this).closest("li").remove();
+        });
+
+    });
+</script>
+<br><br>
+<br>
+<div>
+    <br>
+</div>
+<!-- product list -->
+<section id="menSh">
+<div class="section">
+    <div class="container">
+        <div class="section-header">
+            <h2>Men Shoes</h2>
+        </div>
+
+        <main class="container11">
+
+            <div class="left-column">
+                <img data-image="red" class="active" src="./newnike2.png" alt="" height="800" width="400">
+            </div>
+
+
+            <!-- Right Column -->
+            <div class="right-column">
+
+                <!-- Product Description -->
+                <section id="nike1sH">
+                <div class="product-description">
+                    <span>Men Shoes</span>
+                    <h1>Nike Spy</h1>
+                    <p>The Nike Downshifter 10 M offers updated support and cushioning. A brand new cage for the central part of the foot provides the necessary support for your runs.
+                </div>
+
+                <!-- Product Configuration -->
+                <div class="product-configuration">
+
+                    <!-- Product Color -->
+                    <div class="product-color">
+                        <span>Size</span>
+
+                        <div class="color-choose">
+                            <div>
+                                <p>4</p><input data-image="red" type="radio"  name="color" value="red" >
+                                <label for="red"><span></span></label>
+                            </div>
+                            <div>
+                                <p>5</p><input data-image="blue" type="radio"  name="color" value="blue">
+                                <label for="blue"><span></span></label>
+                            </div>
+                            <div>
+                                <p>6</p><input data-image="black" type="radio"  name="color" value="black">
+                                <label for="black"><span></span></label>
+                            </div>
+                            <div>
+                                <p>8</p><input data-image="black" type="radio"  name="color" value="black">
+                                <label for="black"><span></span></label>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="cable-config">
+                        <span>Ship From</span>
+
+                        <div class="cable-choose">
+                            <button>USA</button>
+                            <button>UK</button>
+                            <button>AUS</button>
+                        </div>
+
+                        <a href="ReturnDel.html">Free Delivery & Free Shipping</a>
+                    </div>
+                </div>
+
+                <!-- Product Pricing -->
+                <div class="product-price">
+                    <span>$199.99</span>
+                    <a href="ProductDetails.html" class="cart-btn">See More</a>
+                </div>
+            </div>
+            </section>
+        </main>
+        <hr>
+        <!-- End of Men shoe 1-->
+        <main class="container11">
+
+            <div class="left-column">
+                <img data-image="red" class="active" src="./NewNB1.png" alt="" height="800" width="400">
+            </div>
+
+
+            <!-- Right Column -->
+            <div class="right-column">
+
+                <!-- Product Description -->
+                <div class="product-description">
+                    <span>Men Shoes</span>
+                    <h1>New Balance Air</h1>
+                    <p>A solid rubber outsole provides slip resistance on slippery floors. Though designed to help prevent slips, you should always exercise caution on slick surfaces.
+                </div>
+
+                <!-- Product Configuration -->
+                <div class="product-configuration">
+
+                    <!-- Product Color -->
+                    <div class="product-color">
+                        <span>Size</span>
+
+                        <div class="color-choose">
+                            <div>
+                                <p>4</p><input data-image="red" type="radio" name="color" value="red" >
+                                <label for="red"><span></span></label>
+                            </div>
+                            <div>
+                                <p>5</p><input data-image="blue" type="radio" name="color" value="blue">
+                                <label for="blue"><span></span></label>
+                            </div>
+                            <div>
+                                <p>6</p><input data-image="black" type="radio"  name="color" value="black">
+                                <label for="black"><span></span></label>
+                            </div>
+                            <div>
+                                <p>8</p><input data-image="black" type="radio"  name="color" value="black">
+                                <label for="black"><span></span></label>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Cable Configuration -->
+                    <div class="cable-config">
+                        <span>Ship From</span>
+
+                        <div class="cable-choose">
+                            <button>USA</button>
+                            <button>UK</button>
+                            <button>AUS</button>
+                        </div>
+
+                        <a href="ReturnDel.html">Free Delivery & Free Shipping</a>
+                    </div>
+                </div>
+
+                <!-- Product Pricing -->
+                <div class="product-price">
+                    <span>$199.99</span>
+                    <a href="Shoe3.html" class="cart-btn">See More</a>
+                </div>
+            </div>
+        </main>
+        <hr>
+        <main class="container11">
+
+            <div class="left-column">
+                <img data-image="red" class="active" src="./NewFILA.png" alt="" height="800" width="400">
+            </div>
+
+
+            <!-- Right Column -->
+            <div class="right-column">
+
+                <!-- Product Description -->
+                <section id="fila1Sh">
+                <div class="product-description">
+                    <span>Men Shoes</span>
+                    <h1>Fila 1911</h1>
+                    <p>Made with our lightweight memory foam sockliner and midsole to provide optimal comfort in every step.
+                </div>
+
+                <!-- Product Configuration -->
+                <div class="product-configuration">
+
+                    <!-- Product Color -->
+                    <div class="product-color">
+                        <span>Size</span>
+
+                        <div class="color-choose">
+                            <div>
+                                <p>4</p><input data-image="red" type="radio" name="color" value="red" >
+                                <label for="red"><span></span></label>
+                            </div>
+                            <div>
+                                <p>5</p><input data-image="blue" type="radio"  name="color" value="blue">
+                                <label for="blue"><span></span></label>
+                            </div>
+                            <div>
+                                <p>6</p><input data-image="black" type="radio"  name="color" value="black">
+                                <label for="black"><span></span></label>
+                            </div>
+                            <div>
+                                <p>8</p><input data-image="black" type="radio" name="color" value="black">
+                                <label for="black"><span></span></label>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="cable-config">
+                        <span>Ship From</span>
+
+                        <div class="cable-choose">
+                            <button>USA</button>
+                            <button>UK</button>
+                            <button>AUS</button>
+                        </div>
+
+                        <a href="ReturnDel.html">Free Delivery & Free Shipping</a>
+                    </div>
+                </div>
+
+                <!-- Product Pricing -->
+                <div class="product-price">
+                    <span>$99.99</span>
+                    <a href="ProductDetails.html" class="cart-btn">See More</a>
+                </div>
+            </div>
+        </main>
+        <hr>
+        <main class="container11">
+
+
+            <div class="left-column">
+                <img data-image="red" class="active" src="./NewAD.png" alt="" height="800" width="400">
+            </div>
+
+
+            <!-- Right Column -->
+            <div class="right-column">
+
+                <!-- Product Description -->
+                <div class="product-description">
+                    <span>Men Shoes</span>
+                    <h1>Adidas Grand 3.0</h1>
+                    <p>The memory foam sockliner and midsole work in unison to provide additional comfort with every step of your day. Face your daily challenges with ease and support with built in perforations for breathability and a variable lace up front closure.
+
+                </div>
+
+                <!-- Product Configuration -->
+                <div class="product-configuration">
+
+                    <!-- Product Color -->
+                    <div class="product-color">
+                        <span>Size</span>
+
+                        <div class="color-choose">
+                            <div>
+                                <p>4</p><input data-image="red" type="radio" name="color" value="red" >
+                                <label for="red"><span></span></label>
+                            </div>
+                            <div>
+                                <p>5</p><input data-image="blue" type="radio" name="color" value="blue">
+                                <label for="blue"><span></span></label>
+                            </div>
+                            <div>
+                                <p>6</p><input data-image="black" type="radio"  name="color" value="black">
+                                <label for="black"><span></span></label>
+                            </div>
+                            <div>
+                                <p>8</p><input data-image="black" type="radio"  name="color" value="black">
+                                <label for="black"><span></span></label>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Cable Configuration -->
+                    <div class="cable-config">
+                        <span>Ship From</span>
+
+                        <div class="cable-choose">
+                            <button>USA</button>
+                            <button>UK</button>
+                            <button>AUS</button>
+                        </div>
+
+                        <a href="ReturnDel.html">Free Delivery & Free Shipping</a>
+                    </div>
+                </div>
+
+                <!-- Product Pricing -->
+                <div class="product-price">
+                    <span>$99.99</span>
+                    <a href="ProductDetails.html" class="cart-btn">See More</a>
+                </div>
+            </div>
+        </main>
+        <hr>
+
+        <div class="section-footer">
+            <a href="./products.html" class="btn-flat btn-hover">view all</a>
+        </div>
+    </div>
+</div>
+<!-- end product list -->
+
+<!-- product list -->
+<section id="womenSh">
+<div class="section">
+    <div class="container">
+        <div class="section-header">
+            <h2>Women Shoes</h2>
+        </div>
+        <main class="container11">
+
+
+            <div class="left-column">
+                <img data-image="red" class="active" src="./CKNEW.png" alt="" height="800" width="400">
+            </div>
+
+
+            <!-- Right Column -->
+            <div class="right-column">
+
+                <!-- Product Description -->
+                <div class="product-description">
+                    <span>Women Shoes</span>
+                    <h1>Calvin Klein</h1>
+                    <p>The Nike Downshifter 10 M offers updated support and cushioning. A brand new cage for the central part of the foot provides the necessary support for your runs.
+                </div>
+
+                <!-- Product Configuration -->
+                <div class="product-configuration">
+
+                    <!-- Product Color -->
+                    <div class="product-color">
+                        <span>Size</span>
+
+                        <div class="color-choose">
+                            <div>
+                                <p>9</p><input data-image="red" type="radio" name="color" value="red" >
+                                <label for="red"><span></span></label>
+                            </div>
+                            <div>
+                                <p>10</p><input data-image="blue" type="radio"  name="color" value="blue">
+                                <label for="blue"><span></span></label>
+                            </div>
+                            <div>
+                                <p>11</p><input data-image="black" type="radio"  name="color" value="black">
+                                <label for="black"><span></span></label>
+                            </div>
+                            <div>
+                                <p>12</p><input data-image="black" type="radio" name="color" value="black">
+                                <label for="black"><span></span></label>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Cable Configuration -->
+                    <div class="cable-config">
+                        <span>Ship From</span>
+
+                        <div class="cable-choose">
+                            <button>USA</button>
+                            <button>UK</button>
+                            <button>AUS</button>
+                        </div>
+
+                        <a href="ReturnDel.html">Free Delivery & Free Shipping</a>
+                    </div>
+                </div>
+
+                <!-- Product Pricing -->
+                <div class="product-price">
+                    <span>$59.99</span>
+                    <a href="shoe4.html" class="cart-btn">See More</a>
+                </div>
+            </div>
+        </main>
+        <hr>
+
+        <main class="container11">
+
+            <div class="left-column">
+                <img data-image="red" class="active" src="./CLNEW.png" alt="" height="800" width="400">
+            </div>
+
+
+            <!-- Right Column -->
+            <div class="right-column">
+
+                <!-- Product Description -->
+                <div class="product-description">
+                    <span>women Shoes</span>
+                    <h1>Jimmy Chooz</h1>
+                    <p>The Jimmy Chooz 10 M offers updated support and cushioning. A brand new cage for the central part of the foot provides the necessary support for your runs.
+                </div>
+
+                <!-- Product Configuration -->
+                <div class="product-configuration">
+
+                    <!-- Product Color -->
+                    <div class="product-color">
+                        <span>Size</span>
+
+                        <div class="color-choose">
+                            <div>
+                                <p>9</p><input data-image="red" type="radio" name="color" value="red" >
+                                <label for="red"><span></span></label>
+                            </div>
+                            <div>
+                                <p>10</p><input data-image="blue" type="radio"  name="color" value="blue">
+                                <label for="blue"><span></span></label>
+                            </div>
+                            <div>
+                                <p>11</p><input data-image="black" type="radio"  name="color" value="black">
+                                <label for="black"><span></span></label>
+                            </div>
+                            <div>
+                                <p>12</p><input data-image="black" type="radio"  name="color" value="black">
+                                <label for="black"><span></span></label>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Cable Configuration -->
+                    <div class="cable-config">
+                        <span>Ship From</span>
+
+                        <div class="cable-choose">
+                            <button>USA</button>
+                            <button>UK</button>
+                            <button>AUS</button>
+                        </div>
+
+                        <a href="ReturnDel.html">Free Delivery & Free Shipping</a>
+                    </div>
+                </div>
+
+                <!-- Product Pricing -->
+                <div class="product-price">
+                    <span>$59.99</span>
+                    <a href="shoe5.html" class="cart-btn">See More</a>
+                </div>
+            </div>
+        </main>
+        <hr>
+
+        <main class="container11">
+
+            <div class="left-column">
+                <img data-image="red" class="active" src="./NENEW.png" alt="" height="800" width="400">
+            </div>
+
+
+            <!-- Right Column -->
+            <div class="right-column">
+
+                <!-- Product Description -->
+                <div class="product-description">
+                    <span>Women Shoes</span>
+                    <h1>Nine West</h1>
+                    <p>The Nike Downshifter 10 M offers updated support and cushioning. A brand new cage for the central part of the foot provides the necessary support for your runs.
+                </div>
+
+                <!-- Product Configuration -->
+                <div class="product-configuration">
+
+                    <!-- Product Color -->
+                    <div class="product-color">
+                        <span>Size</span>
+
+                        <div class="color-choose">
+                            <div>
+                                <p>8</p><input data-image="red" type="radio"  name="color" value="red" >
+                                <label for="red"><span></span></label>
+                            </div>
+                            <div>
+                                <p>10</p><input data-image="blue" type="radio"  name="color" value="blue">
+                                <label for="blue"><span></span></label>
+                            </div>
+                            <div>
+                                <p>11</p><input data-image="black" type="radio"  name="color" value="black">
+                                <label for="black"><span></span></label>
+                            </div>
+                            <div>
+                                <p>12</p><input data-image="black" type="radio"  name="color" value="black">
+                                <label for="black"><span></span></label>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Cable Configuration -->
+                    <div class="cable-config">
+                        <span>Ship From</span>
+
+                        <div class="cable-choose">
+                            <button>USA</button>
+                            <button>UK</button>
+                            <button>AUS</button>
+                        </div>
+
+                        <a href="ReturnDel.html">Free Delivery & Free Shipping</a>
+                    </div>
+                </div>
+
+                <!-- Product Pricing -->
+                <div class="product-price">
+                    <span>$64.99</span>
+                    <a href="ProductDetails.html" class="cart-btn">See More</a>
+                </div>
+            </div>
+        </main>
+        <hr>
+
+        <main class="container11">
+            <div class="left-column">
+                <img data-image="red" class="active" src="./NEWAL.png" alt="" height="800" width="400">
+            </div>
+
+
+            <!-- Right Column -->
+            <div class="right-column">
+
+                <!-- Product Description -->
+                <div class="product-description">
+                    <span>Men Shoes</span>
+                    <h1>Bubble Crooz</h1>
+                    <p>The Nike Downshifter 10 M offers updated support and cushioning. A brand new cage for the central part of the foot provides the necessary support for your runs.
+                </div>
+
+                <!-- Product Configuration -->
+                <div class="product-configuration">
+
+                    <!-- Product Color -->
+                    <div class="product-color">
+                        <span>Size</span>
+
+                        <div class="color-choose">
+                            <div>
+                                <p>10</p><input data-image="red" type="radio" name="color" value="red" >
+                                <label for="red"><span></span></label>
+                            </div>
+                            <div>
+                                <p>11</p><input data-image="blue" type="radio"  name="color" value="blue">
+                                <label for="blue"><span></span></label>
+                            </div>
+                            <div>
+                                <p>12</p><input data-image="black" type="radio"  name="color" value="black">
+                                <label for="black"><span></span></label>
+                            </div>
+                            <div>
+                                <p>13</p><input data-image="black" type="radio"  name="color" value="black">
+                                <label for="black"><span></span></label>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Cable Configuration -->
+                    <div class="cable-config">
+                        <span>Ship From</span>
+
+                        <div class="cable-choose">
+                            <button>USA</button>
+                            <button>UK</button>
+                            <button>AUS</button>
+                        </div>
+
+                        <a href="ReturnDel.html">Free Delivery & Free Shipping</a>
+                    </div>
+                </div>
+
+                <!-- Product Pricing -->
+                <div class="product-price">
+                    <span>$79.99</span>
+                    <a href="ProductDetails.html" class="cart-btn">See More</a>
+                </div>
+            </div>
+        </main>
+        <hr>
+
+
+        <div class="section-footer">
+            <a href="./products.html" class="btn-flat btn-hover">view all</a>
+        </div>
+    </div>
+</div>
+
+    <section id="kidSh">
+<div class="section">
+    <div class="container">
+        <div class="section-header">
+            <h2>Kids Shoes</h2>
+        </div>
+        <main class="container11">
+
+            <div class="left-column">
+                <img data-image="red" class="active" src="./NEWKIDSN.png" alt="" height="800" width="400">
+            </div>
+
+
+            <!-- Right Column -->
+            <div class="right-column">
+
+                <!-- Product Description -->
+                <div class="product-description">
+                    <span>Kid Shoes</span>
+                    <h1>Tory Burch</h1>
+                    <p>The Tory Burch support and cushioning. A brand new cage for the central part of the foot provides the necessary support for your runs.
+                </div>
+
+                <!-- Product Configuration -->
+                <div class="product-configuration">
+
+                    <!-- Product Color -->
+                    <div class="product-color">
+                        <span>Size</span>
+
+                        <div class="color-choose">
+                            <div>
+                                <p>4</p><input data-image="red" type="radio"  name="color" value="red" >
+                                <label for="red"><span></span></label>
+                            </div>
+                            <div>
+                                <p>5</p><input data-image="blue" type="radio" name="color" value="blue">
+                                <label for="blue"><span></span></label>
+                            </div>
+                            <div>
+                                <p>6</p><input data-image="black" type="radio"  name="color" value="black">
+                                <label for="black"><span></span></label>
+                            </div>
+                            <div>
+                                <p>7</p><input data-image="black" type="radio"  name="color" value="black">
+                                <label for="black"><span></span></label>
+                            </div>
+                            <div>
+                                <p>9</p><input data-image="black" type="radio"  name="color" value="black">
+                                <label for="black"><span></span></label>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Cable Configuration -->
+                    <div class="cable-config">
+                        <span>Ship From</span>
+
+                        <div class="cable-choose">
+                            <button>USA</button>
+                            <button>UK</button>
+                            <button>AUS</button>
+                        </div>
+
+                        <a href="ReturnDel.html">Free Delivery & Free Shipping</a>
+                    </div>
+                </div>
+
+                <!-- Product Pricing -->
+                <div class="product-price">
+                    <span>$39.99</span>
+                    <a href="shoe6.html" class="cart-btn">See More</a>
+                </div>
+            </div>
+        </main>
+        <hr>
+
+        <main class="container11">
+
+
+            <div class="left-column">
+                <img data-image="red" class="active" src="./NEWGR.png" alt="" height="800" width="400">
+            </div>
+
+
+            <!-- Right Column -->
+            <div class="right-column">
+
+                <!-- Product Description -->
+                <div class="product-description">
+                    <span>Kid Shoes</span>
+                    <h1>Manolo Blahnik</h1>
+                    <p>The Manlo Blahnik updated support and cushioning. A brand new cage for the central part of the foot provides the necessary support for your runs.
+                </div>
+
+                <!-- Product Configuration -->
+                <div class="product-configuration">
+
+                    <!-- Product Color -->
+                    <div class="product-color">
+                        <span>Size</span>
+
+                        <div class="color-choose">
+                            <div>
+                                <p>5</p><input data-image="red" type="radio"  name="color" value="red" >
+                                <label for="red"><span></span></label>
+                            </div>
+                            <div>
+                                <p>6</p><input data-image="blue" type="radio"  name="color" value="blue">
+                                <label for="blue"><span></span></label>
+                            </div>
+                            <div>
+                                <p>7</p><input data-image="black" type="radio"  name="color" value="black">
+                                <label for="black"><span></span></label>
+                            </div>
+                            <div>
+                                <p>8</p><input data-image="black" type="radio"  name="color" value="black">
+                                <label for="black"><span></span></label>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Cable Configuration -->
+                    <div class="cable-config">
+                        <span>Ship From</span>
+
+                        <div class="cable-choose">
+                            <button>USA</button>
+                            <button>UK</button>
+                            <button>AUS</button>
+                        </div>
+
+                        <a href="ReturnDel.html">Free Delivery & Free Shipping</a>
+                    </div>
+                </div>
+
+                <!-- Product Pricing -->
+                <div class="product-price">
+                    <span>$29.99</span>
+                    <a href="ProductDetails.html" class="cart-btn">See More</a>
+                </div>
+            </div>
+        </main>
+        <hr>
+
+        <main class="container11">
+
+            <div class="left-column">
+                <img data-image="red" class="active" src="./KDADNEW.png" alt="" height="800" width="400">
+            </div>
+
+
+            <!-- Right Column -->
+            <div class="right-column">
+
+                <!-- Product Description -->
+                <div class="product-description">
+                    <span>Kid Shoes</span>
+                    <h1>Adidas Kids</h1>
+                    <p>The Addidas Shoes 10 M offers updated support and cushioning. A brand new cage for the central part of the foot provides the necessary support for your runs.
+                </div>
+
+                <!-- Product Configuration -->
+                <div class="product-configuration">
+
+                    <!-- Product Color -->
+                    <div class="product-color">
+                        <span>Size</span>
+
+                        <div class="color-choose">
+                            <div>
+                                <p>5</p><input data-image="red" type="radio"  name="color" value="red" >
+                                <label for="red"><span></span></label>
+                            </div>
+                            <div>
+                                <p>6</p><input data-image="blue" type="radio" name="color" value="blue">
+                                <label for="blue"><span></span></label>
+                            </div>
+                            <div>
+                                <p>7</p><input data-image="black" type="radio"  name="color" value="black">
+                                <label for="black"><span></span></label>
+                            </div>
+                            <div>
+                                <p>8</p><input data-image="black" type="radio"  name="color" value="black">
+                                <label for="black"><span></span></label>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Cable Configuration -->
+                    <div class="cable-config">
+                        <span>Ship From</span>
+
+                        <div class="cable-choose">
+                            <button>USA</button>
+                            <button>UK</button>
+                            <button>AUS</button>
+                        </div>
+
+                        <a href="ReturnDel.html">Free Delivery & Free Shipping</a>
+                    </div>
+                </div>
+
+                <!-- Product Pricing -->
+                <div class="product-price">
+                    <span>49.99</span>
+                    <a href="ProductDetails.html" class="cart-btn">See More</a>
+                </div>
+            </div>
+        </main>
+        <hr>
+
+        <main class="container11">
+
+            <div class="left-column">
+                <img data-image="red" class="active" src="./NEWKDD2.png" alt="" height="800" width="400">
+            </div>
+
+
+            <!-- Right Column -->
+            <div class="right-column">
+
+                <!-- Product Description -->
+                <div class="product-description">
+                    <span>Kid Shoes</span>
+                    <h1>Nike Spy Kids</h1>
+                    <p>The Nike Downshifter 10 M offers updated support and cushioning. A brand new cage for the central part of the foot provides the necessary support for your runs.
+                </div>
+
+                <!-- Product Configuration -->
+                <div class="product-configuration">
+
+                    <!-- Product Color -->
+                    <div class="product-color">
+                        <span>Size</span>
+
+                        <div class="color-choose">
+                            <div>
+                                <p>8</p><input data-image="red" type="radio" id="red" name="color" value="red" >
+                                <label for="red"><span></span></label>
+                            </div>
+                            <div>
+                                <p>10</p><input data-image="blue" type="radio" id="blue" name="color" value="blue">
+                                <label for="blue"><span></span></label>
+                            </div>
+                            <div>
+                                <p>11</p><input data-image="black" type="radio" id="black" name="color" value="black">
+                                <label for="black"><span></span></label>
+                            </div>
+                            <div>
+                                <p>12</p><input data-image="black" type="radio"  name="color" value="black">
+                                <label for="black"><span></span></label>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Cable Configuration -->
+                    <div class="cable-config">
+                        <span>Ship From</span>
+
+                        <div class="cable-choose">
+                            <button>USA</button>
+                            <button>UK</button>
+                            <button>AUS</button>
+                        </div>
+
+                        <a href="ReturnDel.html">Free Delivery & Free Shipping</a>
+                    </div>
+                </div>
+
+                <!-- Product Pricing -->
+                <div class="product-price">
+                    <span>$69.99</span>
+                    <a href="Shoe2.html" class="cart-btn">See More</a>
+                </div>
+            </div>
+        </main>
+        <hr>
+
+
+        <div class="section-footer">
+            <a href="./products.html" class="btn-flat btn-hover">view all</a>
+        </div>
+    </div>
+</div>
+
+<!-- end product list -->
+
+
+<!-- footer -->
+<footer class="bg-second">
+    <div class="container">
+        <div class="row">
+            <div class="col-3 col-md-6">
+                <h3 class="footer-head">Products</h3>
+                <ul class="menu">
+                    <li><a href="#">Nike</a></li>
+                    <li><a href="#">Adidas</a></li>
+                    <li><a href="#">New Balance</a></li>
+                    <li><a href="#">Fila</a></li>
+                    <li><a href="#">Puma</a></li>
+                </ul>
+            </div>
+            <div class="col-3 col-md-6">
+                <h3 class="footer-head">services</h3>
+                <ul class="menu">
+                    <li><a href="#">Deliver Services</a></li>
+                    <li><a href="#">Return an Item</a></li>
+                    <li><a href="#">Send as a gift</a></li>
+                    <li><a href="#">About warranty</a></li>
+                    <li><a href="#">pickup service</a></li>
+                </ul>
+            </div>
+            <div class="col-3 col-md-6">
+                <h3 class="footer-head">support</h3>
+                <ul class="menu">
+                    <li><a href="#">Help center</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">product help</a></li>
+                    <li><a href="#">find correct size</a></li>
+                    <li><a href="#">Live chat</a></li>
+                </ul>
+            </div>
+            <div class="col-3 col-md-6 col-sm-12">
+                <div class="contact">
+                    <h3 class="contact-header">
+                        Kavin SK Stores
+                    </h3>
+                    <ul class="contact-socials">
+                        <li><a href="#">
+                            <i class='bx bxl-facebook-circle'></i>
+                        </a></li>
+                        <li><a href="#">
+                            <i class='bx bxl-instagram-alt'></i>
+                        </a></li>
+                        <li><a href="#">
+                            <i class='bx bxl-youtube'></i>
+                        </a></li>
+                        <li><a href="#">
+                            <i class='bx bxl-twitter'></i>
+                        </a></li>
+                    </ul>
+                </div>
+                <div class="subscribe">
+                    <input type="email" placeholder="ENTER YOUR EMAIL">
+                    <button>subscribe</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- end footer -->
+
+<!-- app js -->
+<script src="./Main.js"></script>
+<script src="./Main2.js"></script>
+</body>
+
+</html>
+</body>
+</html>
